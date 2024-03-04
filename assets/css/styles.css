@@ -9,18 +9,18 @@ body{
 	height:100%;
 	margin:0;
 	padding:0;
+	overflow:hidden;
 }
 img{
-	position:fixed;
-	height:100%;
-	z-index:-1;
+	margin:0;
+	padding:0;
+	height:100%
 }
 .image{
-	flex-shrink: 0;
-	flex-basis: 40vw;
+	flex:0 0 content;
 }
 .form-container{
-	background-color: white;
+	background-color: whitesmoke;
 	flex: 2;
 	display:flex;
 	flex-direction: column;
@@ -30,5 +30,21 @@ img{
 	flex:1;
 }
 .form{
-	background-color: whitesmoke;
+	position:relative;
+	padding:30px;
+	background-color: white;
+	box-shadow: 0px 5px 10px -4px grey;
+}
+p{
+	font-size:larger;
+	font-weight: bold;
+	margin-left: 8px;
+}
+.flex-container{
+	display:flex;
+	flex-wrap: wrap;
+	width:50%;
+}
+.flex-container div{
+	margin:0 8px 8px 0px;
 }
