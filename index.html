@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="./assets/script.js" defer></script>
 	<link rel="stylesheet" href="./assets/css/styles.css">
-	<title>Login Page - Autism & Alzheimer</title>
+	<title>Login Page - Odin Project</title>
 </head>
 
 <body>
@@ -42,11 +43,12 @@
 					</div>
 					<div>
 						<label for="tel">PHONE NUMBER</label>
-						<div><input id="tel" type="tel"></div>
+						<div><input id="tel" type="tel" pattern="[0-9]{10}|\+[0-9]{12}|\+[0-9]{11}|\+[0-9]{10}|"></div>
 					</div>
 					<div>
 						<label for="password">PASSWORD</label>
-						<div><input id="password" type="password"></div>
+						<div><input id="password" type="password">
+							<p class="incorrect hidden"><sup>* Passwords do not match</sup></p></div>
 					</div>
 					<div>
 						<label for="confirm">CONFIRM PASSWORD</label>
