@@ -9,41 +9,56 @@
 </head>
 
 <body>
-	<div class="image"><div>ktiba</div><img src="assets/bg.jpg" alt=""></div>
+	<div class="image">
+		<div class="translucent"><img src="assets/odin-lined.png" alt="">ODIN</div>
+	</div>
 	<div class="form-container">
-		<div>
-			This is not a real service, this is only a lil' project for educational purposes! stop reading this.
+		<div class="anotherflex">
+			<div class="flex">
+				<p class="filler">This is <em>not</em> a real service, this is only a lil' project for learning
+					purposes! you've read this far, and wasted 10 seconds of your life... <br>Sign up <em>now</em> to
+					get started!</p>
+
+			</div>
+			<div class="flex">
+				<p class="filler">You know you want to.</p>
+			</div>
 		</div>
 		<div class="form">
 			<p>Let's do this!</p>
-			<form action="">
+			<form action="" method="get" id="form">
 				<div class="flex-container">
 					<div>
-						<label for="">First name</label>
-						<div><input type="text"></div>
+						<label for="fname">FIRST NAME</label>
+						<div><input id="fname" type="text"></div>
 					</div>
 					<div>
-						<label for="">Last name</label>
-						<div><input type="text"></div>
-					</div><div>
-						<label for="">Email</label>
-						<div><input type="text"></div>
-					</div><div>
-						<label for="">Phone Number</label>
-						<div><input type="text"></div>
+						<label for="lname">LAST NAME</label>
+						<div><input id="lname" type="text"></div>
 					</div>
 					<div>
-						<label for="">Password</label>
-						<div><input type="text"></div>
+						<label for="email">EMAIL</label>
+						<div><input id="email" type="email"></div>
 					</div>
 					<div>
-						<label for="">Confirm Password</label>
-						<div><input type="text"></div>
+						<label for="tel">PHONE NUMBER</label>
+						<div><input id="tel" type="tel"></div>
+					</div>
+					<div>
+						<label for="password">PASSWORD</label>
+						<div><input id="password" type="password"></div>
+					</div>
+					<div>
+						<label for="confirm">CONFIRM PASSWORD</label>
+						<div><input id="confirm" type="password"></div>
 					</div>
 				</div>
 			</form>
 		</div>
-		<div></div>
+		<div class="login-container">
+			<button type="submit" form="form">Create Account</button>
+			<p>Already have an account? <span>Log in</span></p>
+		</div>
 	</div>
 </body>
 
